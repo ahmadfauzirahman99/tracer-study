@@ -1,0 +1,28 @@
+<div class="panel panel-info">
+    <div class="panel-body">
+
+        <div class="text text-center">
+            <img src="<?= $this->url->getStatic('public/images/logo.jpg') ?>" alt="">
+            <h2 class="text text-primary">
+              <strong>SELAMAT DATANG DI KUISIONER ONLINE STIKOM PELITA INDONESIA</strong>
+          </h2>
+          <?php $this->flashSession->Output() ?>
+            <hr>
+            <div class="col-md-6">
+                <a type="button" class="btn btn-block btn-info" href="<?= $this->url->get('index/formuser')?>">
+                  <span class="glyphicon glyphicon-user"></span>
+                  Kuisioner Perusahaan
+              </a>
+            </div>
+            <div class="col-md-6">
+                <a type="button" class="btn btn-block btn-info" href="<?= $this->url->get('index/formalumni')?>">
+                  <span class="glyphicon glyphicon-book"></span>
+                  Kuisioner Alumni
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+
+    </div>
+</div>
